@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6838FB06-F846-4FB1-A468-B9185EC520E2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp1</RootNamespace>
+    <AssemblyName>ConsoleApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ConsoleApp1.ExceptionHandling.DivideByZero</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access_Modifiers\ClassAccessModifiers.cs" />
+    <Compile Include="Access_Modifiers\MethodAccessModifiers.cs" />
+    <Compile Include="Access_Modifiers\VariablesAccessModifiers.cs" />
+    <Compile Include="Arrays\ArrayLength.cs" />
+    <Compile Include="Arrays\BasicArray.cs" />
+    <Compile Include="Arrays\ReverseArray.cs" />
+    <Compile Include="Arrays\SearchArrayElement.cs" />
+    <Compile Include="Basics\Accepting_Input.cs" />
+    <Compile Include="Basics\BoxingUnboxingDemo.cs" />
+    <Compile Include="Basics\DeepCopyDemo.cs" />
+    <Compile Include="Basics\Methods.cs" />
+    <Compile Include="Basics\Methods_Main.cs" />
+    <Compile Include="Basics\Operators.cs" />
+    <Compile Include="Basics\ShadowCopyDemo.cs" />
+    <Compile Include="Basics\ShadowingDemo.cs" />
+    <Compile Include="Basics\ShallowCopyDemo.cs" />
+    <Compile Include="Basics\Simple.cs" />
+    <Compile Include="Basics\TypeCasting.cs" />
+    <Compile Include="Basics\Variables.cs" />
+    <Compile Include="Class_Objects\CalculateInterest.cs" />
+    <Compile Include="Class_Objects\DemoCalculator.cs" />
+    <Compile Include="Class_Objects\NestedClasses.cs" />
+    <Compile Include="Constructors\Constructor_Chaining.cs" />
+    <Compile Include="Constructors\Constructor_Inheritance.cs" />
+    <Compile Include="Constructors\Constructor_Inheritance_with_accessspecifiers.cs" />
+    <Compile Include="Constructors\Copy_Constructor.cs" />
+    <Compile Include="Constructors\Default_Constructor.cs" />
+    <Compile Include="Constructors\EmployeeSalary.cs" />
+    <Compile Include="Constructors\Extended_Constructor_Inheritance.cs" />
+    <Compile Include="Constructors\Parameterized_Constructor.cs" />
+    <Compile Include="Constructors\PersonArrayDemo.cs" />
+    <Compile Include="Constructors\PrivateConstructor_SingletonPattern.cs" />
+    <Compile Include="Constructors\Simple_PrivateConstructor.cs" />
+    <Compile Include="Constructors\Static_Constructor.cs" />
+    <Compile Include="Constructors\TypesofConstructors_with_Inheritance.cs" />
+    <Compile Include="Control_Statements\Conditional_Blocks\IfElseDemo.cs" />
+    <Compile Include="Control_Statements\Conditional_Blocks\IfElse_CheckGreatorNo.cs" />
+    <Compile Include="Control_Statements\Conditional_Blocks\SwitchCase.cs" />
+    <Compile Include="Control_Statements\Loops\ForLoop.cs" />
+    <Compile Include="Control_Statements\Loops\ForTable.cs" />
+    <Compile Include="Control_Statements\Loops\WhileTable.cs" />
+    <Compile Include="ExceptionHandling\ArrayIndexoutofRange.cs" />
+    <Compile Include="ExceptionHandling\DivideByZero.cs" />
+    <Compile Include="FileHandling\AddOneTexttoFileandStop.cs" />
+    <Compile Include="FileHandling\AddTextToFile.cs" />
+    <Compile Include="Methods\Getters_Setters.cs" />
+    <Compile Include="Methods\Inbuilt_Reverse_Num_String.cs" />
+    <Compile Include="Methods\MethodReturningObject_calarea.cs" />
+    <Compile Include="Methods\Table_UserdefinedNum_Readline_Convert.cs" />
+    <Compile Include="OOPS\Abstraction.cs" />
+    <Compile Include="OOPS\BasicClassObjects.cs" />
+    <Compile Include="OOPS\ClassObjectMain.cs" />
+    <Compile Include="OOPS\Encapsulation.cs" />
+    <Compile Include="OOPS\Inheritance.cs" />
+    <Compile Include="OOPS\Inheritance\Hierarchical.cs" />
+    <Compile Include="OOPS\Inheritance\Hybrid.cs" />
+    <Compile Include="OOPS\Inheritance\Multilevel.cs" />
+    <Compile Include="OOPS\Inheritance\Multiple_ByInterfaces.cs" />
+    <Compile Include="OOPS\Inheritance\Single.cs" />
+    <Compile Include="OOPS\Interface1.cs" />
+    <Compile Include="OOPS\Interface2.cs" />
+    <Compile Include="OOPS\InterfaceDemo.cs" />
+    <Compile Include="OOPS\Interface_Class.cs" />
+    <Compile Include="OOPS\Polymorphism\Overloading.cs" />
+    <Compile Include="OOPS\Polymorphism\Overloading_area_square_rect.cs" />
+    <Compile Include="OOPS\Polymorphism\Overloading_Overidding_area_square_rect_Circle.cs" />
+    <Compile Include="OOPS\Polymorphism\Overriding.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
